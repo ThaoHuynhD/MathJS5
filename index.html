@@ -1,0 +1,97 @@
+<!DOCTYPE html>ss
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math-homework</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark">
+    <div class="container bg-white">
+        <div class="row ">
+            <div class="col-6">
+                <div class="my-5 p-5 text-center">
+                    <h1 class="text-warning">BÀI TẬP VỀ NHÀ</h1>
+                    <div class="form-group m-0">
+                        <label for="so-nguyen-n"><b>Nhập số nguyên:</b></label>
+                        <input id="so-nguyen-n" class="form-control" type="number" name="">
+                        <button onclick="nhapSoNguyenvaoDay()" class="btn btn-success my-4 w-100">
+                            <b>Thêm số</b></button>
+                        <div id="daySoDaNhap"></div>
+                        <div id="daySoThucDaNhap"></div>
+                    </div>
+                </div>
+                <div class="progress m-5">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%"
+                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div id="result" class="bg-warning m-5 py-4 d-block"></div>
+            </div>
+            <div class="col-6">
+                <div class="cac-phim-chuc-nang my-5 p-5 bg-white container">
+                    <button onclick="tongSoDuong()" class="btn btn-outline-success m-1 w-100">
+                        Tổng các số dương</button>
+                    <button onclick="demSoDuong()" class="btn btn-outline-success m-1 w-100">
+                        Đếm số dương</button>
+                    <button onclick="timSoNhoNhat()" class="btn btn-outline-success m-1 w-100">
+                        Tìm số nhỏ nhất</button>
+                    <button onclick="timSoDuongNhoNhat()" class="btn btn-outline-success m-1 w-100">
+                        Tìm số dương nhỏ nhất</button>
+                    <button onclick="timSoChanCuoiCung()" class="btn btn-outline-success m-1 w-100">
+                        Tìm số chẵn cuối cùng</button>
+                    <div class="form-group row m-1">
+                        <div class="col-6 p-1">
+                            <label for="vitri1"><b>Vị trí muốn đổi 1:</b></label>
+                            <input id="vitri1" class="form-control" type="number" name="" value="1">
+                        </div>
+                        <div class="col-6 p-1">
+                            <label for="vitri2"><b>Vị trí muốn đổi 2:</b></label>
+                            <input id="vitri2" class="form-control" type="number" name="" value="2">
+                        </div>
+                    </div>
+                    <div id="viTriDaNhap"></div>
+                    <button onclick="doiViTri2GiaTri()" class="btn btn-outline-success m-1 w-100">
+                        Đổi chỗ 2 giá trị trong mảng</button>
+                    <button onclick="sapXepTangDan()" class="btn btn-outline-success m-1 w-100">
+                        Sắp xếp theo thứ tự tăng dần</button>
+                    <button onclick="timSoNguyenToDauTien()" class="btn btn-outline-success m-1 w-100">
+                        Tìm số nguyên tố đầu tiên</button>
+                        <div class="form-group row m-1">
+                                <label for="so-thuc-input"><b>Thêm số thực vào ô bên dưới:</b></label>
+                                <div class="col-8 p-0">
+                                    <input id="so-thuc-input" class="form-control" type="number" name="" value="">
+                                </div>
+                                <div class="col-4 pl-2 pr-0">
+                                    <button onclick="nhapSoThucvaoDay()" class="btn btn-success w-100">
+                                        Thêm số</button>
+                                </div>
+                        </div>
+                        <div id="soThucDaNhap"></div>
+                    <button onclick="demSoNguyen()" class="btn btn-outline-success m-1 w-100">
+                        Nhập thêm 1 mảng số thực. Tìm số nguyên.</button>
+                    <button onclick="soSanhSoLuongSoAmDuong()" class="btn btn-outline-success m-1 w-100">
+                        So sánh số lượng số âm và số dương</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
